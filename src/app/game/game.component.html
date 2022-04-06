@@ -1,0 +1,85 @@
+<div class="main-container">
+  <h1 class="mat-display-2" id="game-header">Tic-Tac-Toe</h1>
+  <div class="field" id="game-info-container">
+    <p id="current-status" class="mat-display-1">
+      Start the Game with the below button
+    </p>
+  </div>
+  <div id="button-container" class="field">
+    <!-- STEP 16: on click -->
+    <button
+      (click)="startGame()"
+      mat-raised-button
+      color="accent"
+      id="start-game-button"
+    >
+      Start Game Now!
+    </button>
+  </div>
+
+  <div id="gameboard">
+    <div class="players" id="player-one">
+      <p class="mat-body-1">Player 1</p>
+    </div>
+    <!-- STEP 8: Gamefield -->
+    <div id="gamefield">
+      <div class="row">
+        <!-- STEP 19: click 'clickSubfield' -->
+        <div
+          position="0"
+          class="subfield col-4"
+          (click)="clickSubfield($event)"
+        ></div>
+        <div
+          position="1"
+          class="subfield col-4"
+          (click)="clickSubfield($event)"
+        ></div>
+        <div
+          position="2"
+          class="subfield col-4"
+          (click)="clickSubfield($event)"
+        ></div>
+      </div>
+      <div class="row">
+        <div
+          position="3"
+          class="subfield col-4"
+          (click)="clickSubfield($event)"
+        ></div>
+        <div
+          position="4"
+          class="subfield col-4"
+          (click)="clickSubfield($event)"
+        ></div>
+        <div
+          position="5"
+          class="subfield col-4"
+          (click)="clickSubfield($event)"
+        ></div>
+      </div>
+      <div class="row">
+        <div
+          position="6"
+          class="subfield col-4"
+          (click)="clickSubfield($event)"
+        ></div>
+        <div
+          position="7"
+          class="subfield col-4"
+          (click)="clickSubfield($event)"
+        ></div>
+        <div
+          position="8"
+          class="subfield col-4"
+          (click)="clickSubfield($event)"
+        ></div>
+      </div>
+    </div>
+    <div class="players" id="player-two">
+      <p class="mat-body-1">Player 2</p>
+    </div>
+  </div>
+</div>
+
+
